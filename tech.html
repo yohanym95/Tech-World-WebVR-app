@@ -1,0 +1,135 @@
+<!DOCTYPE>
+<html>
+<head>
+    <script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
+</head>
+
+<body>
+    <a-scene background="color:black">
+        <a-assets>
+            <img id="google" src="img/Google.jpg" />
+            <img id="apple" src="img/apple.png" />
+            <img id="ground" src="img/img.jpg" />
+            <img id="facebook" src="img/facebook.png" />
+            <img id="amazon" src="img/amazon.png" />
+            <img id="huawei" src="img/huawei_logo.jpg" />
+            <img id="microsoft" src="img/microsoft.jpg" />
+            <img id="samsung" src="img/Samsung.png"/>
+            <img id="intel" src="img/intel.png"/>
+            <img id="ibm" src="img/IBM.png"/>
+        </a-assets>
+
+
+        <a-box id="google1" width="1" height="1" depth="1" position="14 27 -30" src="#google" scale="2 2 2"
+            animation="property:rotation; loop:true; to:0 360 0; repeat:indefinite; easing:linear">
+        </a-box>
+
+        <a-box id="apple1" width="1" height="1" depth="1" position="-15 27 -50" src="#apple" scale="2 2 2"
+            animation="property:rotation; loop:true; to:0 360 0; repeat:indefinite; easing:linear; ">
+        </a-box>
+
+        <a-box id="facebook1" width="1" height="1" depth="1" position="-50 27 -80" src="#facebook" scale="2 2 2"
+            animation="property:rotation; loop:true; to:0 360 0; repeat:indefinite; easing:linear; ">
+        </a-box>
+
+        <a-box id="amazon1" width="1" height="1" depth="1" position="-50 27 -40" src="#amazon" scale="2 2 2"
+            animation="property:rotation; loop:true; to:0 360 0; repeat:indefinite; easing:linear; ">
+        </a-box>
+
+        <a-box id="huawei1" width="1" height="1" depth="1" position="80 27 -60" src="#huawei" scale="2 2 2"
+            animation="property:rotation; loop:true; to:0 360 0; repeat:indefinite; easing:linear; ">
+        </a-box>
+
+        <a-box id="microsoft1" width="1" height="1" depth="1" position="-70 27 -40" src="#microsoft" scale="2 2 2"
+            animation="property:rotation; loop:true; to:0 360 0; repeat:indefinite; easing:linear; ">
+        </a-box>
+
+        <a-box id="samsung1" width="1" height="1" depth="1" position="-50 27 -55" src="#samsung" scale="2 2 2"
+            animation="property:rotation; loop:true; to:0 360 0; repeat:indefinite; easing:linear; ">
+        </a-box>
+
+        <a-box id="intel1" width="1" height="1" depth="1" position="4 27 -80" src="#intel" scale="2 2 2"
+            animation="property:rotation; loop:true; to:0 360 0; repeat:indefinite; easing:linear; ">
+        </a-box>
+
+        <a-box id="ibm1" width="1" height="1" depth="1" position="45 27 -70" src="#ibm" scale="2 2 2"
+            animation="property:rotation; loop:true; to:0 360 0; repeat:indefinite; easing:linear; ">
+        </a-box>
+
+
+        <!-- building box -->
+        <a-box id="googlebuilding" link="href: https://google.com; on:click;" width="3" height="14" depth="1"
+            position="14 4 -30" color="grey" scale="3 3 3">
+        </a-box>
+
+        <a-box id="applebuilding" link="href: https://www.apple.com/; on:click;" width="3" height="14" depth="1" position="-15 4 -50" color="grey" scale="3 3 3">
+        </a-box>
+
+        <a-box id="facebookbuilding" link="href: https://www.facebook.com/; on:click;" width="3" height="14" depth="1" position="-50 4 -80" color="grey" scale="3 3 3">
+        </a-box>
+
+        <a-box id="samsungbuilding" link="href: https://www.samsung.com/us/; on:click;" width="3" height="14" depth="1" position="-50 4 -55" color="grey" scale="3 3 3">
+        </a-box>
+
+        <a-box id="amazonbuilding" link="href: https://www.amazon.com/; on:click;" width="3" height="14" depth="1" position="-50 4 -40" color="grey" scale="3 3 3">
+        </a-box>
+
+        <a-box id="huaweibuilding" link="href:https://www.huawei.com/en/; on:click;" width="3" height="14" depth="1" position="80 4 -60" color="grey" scale="3 3 3">
+        </a-box>
+
+
+
+        <a-box id="microsoftbuilding" link="href: https://www.microsoft.com/en-lk; on:click;" width="3" height="14" depth="1" position="-70 4 -40" color="grey" scale="3 3 3">
+        </a-box>
+
+        <a-box id="intelbuilding" link="href: https://www.intel.com/content/www/us/en/homepage.html; on:click;" width="3" height="14" depth="1" position="4 4 -80" color="grey" scale="3 3 3">
+        </a-box>
+
+        <a-box id="ibmbuilding" link="href: https://www.ibm.com/lk-en/; on:click;" width="3" height="14" depth="1"
+            position="45 4 -70" color="grey" scale="3 3 3">
+        </a-box>
+
+
+        <!-- text -->
+
+        <a-text id="googletext" value="Google" color="white" height="30" width="30" position="11 30 -29"></a-text>
+
+        <a-text id="appletext" value="Apple" color="white" height="30" width="30" position="-17 30 -50"></a-text>
+
+        <a-text id="facebooktext" value="Facebook" color="white" height="40" width="40" position="-52 30 -80"></a-text>
+
+        <a-text id="amazontext" value="Amazon" color="white" height="35" width="35" position="-53 30 -40"></a-text>
+
+        <a-text id="huaweitext" value="Huawei" color="white" height="40" width="40" position="77 31 -60"></a-text>
+
+        <a-text id="microsofttext" value="Microsoft" color="white" height="40" width="40" position="-73 30 -40">
+        </a-text>
+
+        <a-text id="samsungttext" value="Samsung" color="white" height="40" width="40" position="-53 30 -55">
+        </a-text>
+
+        <a-text id="intelttext" value="Intel" color="white" height="45" width="45" position="1 30 -80">
+        </a-text>
+
+        <a-text id="ibmttext" value="IBM" color="white" height="45" width="45" position="42 30 -70">
+        </a-text>
+
+
+        <a-camera position="0 28 13">
+            <!-- <a-cursor color="#00000"></a-cursor> -->
+            <a-entity
+                animation__click="property: scale; startEvents: click; easing: easeInCubic; dur: 150; from: 0.1 0.1 0.1; to:  0.5 0.5 0.5"
+                animation__fusing="property: scale; startEvents: fusing; easing: easeInCubic; dur: 1500; from: 0.5 0.5 0.5; to: 0.1 0.1 0.1"
+                animation__mouseleave="property: scale; startEvents: mouseleave; easing: easeInCubic; dur: 500; to:  0.5 0.5 0.5"
+                cursor="fuse: true;" material="color: lightgreen; shader: flat" position="0 0 -3" geometry="primitive: ring; radiusInner: 0.2; radiusOuter: 0.3;">
+            </a-entity>
+        </a-camera>
+
+        <a-plane color="lightblue" height="3000" width="3000" rotation="-90 0 0"></a-plane>
+
+    </a-scene>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

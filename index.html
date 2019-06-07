@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tech World</title>
+    <script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
+</head>
+
+<body>
+
+    <a-scene>
+        <a-assets>
+            <img id="sky" src="img/sky.jpg">
+            <img id="techworld" src="img/facebook.png" />
+        </a-assets>
+
+
+
+        <a-box link="href: tech.html; on:click;" color="hotpink" width="6" height="14" depth="3" position="-25 2 -70" color="grey"
+            scale="3 3 3">
+        </a-box>
+
+        <a-box link="href: tech.html; on:click;" color="hotpink" width="6" height="14" depth="3" position="25 2 -70" color="grey"
+            scale="3 3 3">
+        </a-box>
+
+        <a-box link="href: tech.html; on:click;" color="hotpink" width="25" height="5" depth="3" position="0 21 -70" color="grey"
+            scale="3 3 3">
+        </a-box>
+
+        <a-text link="href: tech.html; on:click;"  value="Welcome to Tech World" color="blue" height="100" width="100" position="-23 40 -80">
+        </a-text>
+        <a-torus position="0 28 -70" color="#43A367" arc="180" radius="35" radius-tubular="1.5"></a-torus>
+
+        <a-camera position="0 35 13">
+            <!-- <a-cursor color="#00000"></a-cursor> -->
+            <a-entity
+                animation__click="property: scale; startEvents: click; easing: easeInCubic; dur: 150; from: 0.1 0.1 0.1; to:  0.5 0.5 0.5"
+                animation__fusing="property: scale; startEvents: fusing; easing: easeInCubic; dur: 1500; from: 0.5 0.5 0.5; to: 0.1 0.1 0.1"
+                animation__mouseleave="property: scale; startEvents: mouseleave; easing: easeInCubic; dur: 500; to:  0.5 0.5 0.5"
+                cursor="fuse: true;" material="color: lightgreen; shader: flat" position="0 0 -3"
+                geometry="primitive: ring; radiusInner: 0.2; radiusOuter: 0.3;">
+            </a-entity>
+        </a-camera>
+
+
+    </a-scene>
+
+</body>
+
+</html>
